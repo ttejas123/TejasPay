@@ -1,10 +1,17 @@
-import React from 'react';
-
+import React, {useState} from 'react';
+// import ReactFlagsSelect from 'react-flags-select';
+// import 'react-phone-input-2/lib/material.css'
+// import PhoneInput from 'react-phone-input-2'
 import "./style.css"
 import MainHero from '../../assets/MainHere.jpg'
 import MainHero2 from '../../assets/mainHere2.jpg'
 
-const header = props => (
+
+const Header = props => {
+  const [value, setValue] = useState()
+  const [selected, setSelected] = useState('')
+
+  return (
   <React.Fragment>
     <header>
       <section className="container main-here-container">
@@ -32,8 +39,31 @@ const header = props => (
           </div>
         </div>
       </section>
+      <div className="">
+     
+      {/*<PhoneInput
+              country={'us'}
+              value={value}
+              placeholder="Enter mobile Number"
+              specialLabel="Phone no"
+              inputStyle={{
+                padding : "1.5rem 0 1.5rem 5rem",
+                width : "100%"
+              }}
+              
+              onChange={phone => setValue(phone)}
+            />*/}
+
+      {/*<ReactFlagsSelect
+              selected={selected}
+              onSelect={code => setSelected(code)}
+            />*/}
+      
+      </div>
+      
     </header>
   </React.Fragment>
-);
+)
+};
 
-export default header;
+export default Header;

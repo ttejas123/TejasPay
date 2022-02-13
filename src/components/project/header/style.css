@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&display=swap');
+
+.unGrm{
+  font-family: 'Arapey', serif;
+  font-weight: bolder;
+  
+}
+
+.newUnderLine{
+  text-decoration: underline;
+}
+
+.phoneInputStyle input{
+  padding: 10px;
+  display: none;
+}
+
+.phoneInputStyle .PhoneInputCountry .PhoneInputCountryIcon{
+  width: 100%;
+  height: 3rem;
+}
+
+.phoneInputStyle .PhoneInputCountry .PhoneInputCountrySelectArrow{
+  height: 0.5rem;
+  font-weight: 2rem;
+  font-size: 2rem;
+
+  margin: 0 0 0 15px;
+}

@@ -5,16 +5,13 @@
   --main-text-color: #333333;
 }
 
-.page-footer{
-	
-	padding: 0.3rem 0;
-	font-size: 2rem;
-	background-color: var(--bgcolor);
-}
 
-.footerStyle{
-	position: relative;
-	z-index: 99;
-	bottom: 0;
-	width: 100%;
+
+
+
+.FooterFix{
+	 
+   
+
+   /*box-shadow:inset 20rem 0rem 2rem #e6fbff;*/
 }

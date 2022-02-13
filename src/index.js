@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import TejasKaData, { NavBar, Fotter, Slider, Header } from './dataFile.js'
+import TejasKaData, { NavBar, Fotter, Slider, Header, ProjectHeader } from './dataFile.js'
 import './index.css'
+import App from './App.js'
 
 import {
     BrowserRouter as Router,
@@ -14,14 +15,41 @@ import {
 
 ReactDOM.render(<>
   <Router>
-          <div className="App">
-            <NavBar Object = {TejasKaData} />
-            <Routes>
-                 <Route exact path='/' element={<Header />}></Route>
-                 <Route exact path='/home' element={<Header />}></Route>
-                 <Route exact path='/about' element={< Slider />}></Route>
-            </Routes>
-          </div>
+    <div style={{height: "100%"}}>
+      <ProjectHeader Object = {TejasKaData} />
+
+    {/*Part Which Can Change In Middle of Site*/}
+
+      <Routes>
+        <Route path='/' exct element={<App />} />
+        <Route path='/home' exct element={<App />} />
+        <Route path='/aboutus' exct element={<App />} />
+        <Route path='/contact' exct element={<></>} />
+      </Routes>
+
+
+
+      <Fotter />
+    </div>
   </Router>
-  <Fotter />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   </>, document.getElementById('root'));

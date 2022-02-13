@@ -1,8 +1,6 @@
 import React from 'react';
 import Link from './Links.js'
-import styles from './styles.module.css';
-import MainFooter from './mainFooter.js'
-import Register from './register.js'
+// import styles from './styles.module.css';
 import './index.css'
 
 const footer = props => {
@@ -22,11 +20,26 @@ const footer = props => {
   }]
 
   return (
-        <>
-        
-        <Register />
-        <MainFooter />
-        </>
+        <div className="FooterFix">
+          
+
+          <div class="container">
+
+            <ul class="list-unstyled list-inline text-center ">
+              <li class="list-inline-item">
+                <h3 class="">Register for free</h3>
+              </li>
+              <li class="list-inline-item ms-3">
+                <a className="  text-center bg-transparent text-success font-weight-bold" type="submit">Sign Up!</a>
+              </li>
+            </ul>
+
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+              <a className="text-dark" href="locahost:3000/"> MDBootstrap.com</a>
+            </div>
+
+          </div>
+        </div>
       )
 };
 

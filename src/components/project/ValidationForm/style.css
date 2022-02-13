@@ -1,0 +1,62 @@
+.inputBox {
+  border: 1px solid #c5cdca;
+  line-height: 30px;
+  /*height: 30px;*/
+  
+}
+
+.inputBox:hover{
+  border: 1px solid #000;
+}
+
+.textBoxStyle{
+  border: 1px solid #c5cdca;
+  font-size: 13px;
+}
+
+.textBoxStyle:hover{
+  border: 1px solid #000;
+}
+
+.lableClass {
+  z-index: 1;
+  
+  border: 1px solid transparent;
+  line-height: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  float: left;
+  height: 0px;
+  line-height: 10px;
+  padding: 0px 5px 0px 5px;
+  position: relative;
+  left: 21px;
+  top: 1px;
+  color: #000;
+  background-color: #fff;
+  font-size: 12px;
+}
+body, .inputBox {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: sans-serif;
+}
+
+
+.input-group-addon {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.input-group-addon:first-child {
+  border-left-width: 1px;
+}
+.input-group-addon:last-child {
+  border-right-width: 1px;
+}
+
+.ButtonStyle{
+  background-color: #3a2397;
+  width: 15%;
+  font-weight: bolder;
+}

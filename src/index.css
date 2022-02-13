@@ -6,13 +6,21 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+html{
+  height: 100vh;
+  box-shadow:inset 30rem 0rem 40rem #e6fbff;
+}
 body {
   margin: 0;
+  width: 100%;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 
@@ -23,6 +31,7 @@ code {
 
 :root {
   --bgcolor:  #f1f5fd;
+  --button-color:  #000080;
   --primary-color: #6f5de7;
   --text-color:  #828286;
   --main-text-color: #333333;
@@ -49,7 +58,7 @@ h6 {
 /*--------------------------navbar css style starts-----------------------------*/
 
 .navbar-bg {
-  background-color: var(--bgcolor);
+  
   padding: 2rem 0;
   z-index: 99;
   position: relative;
@@ -76,11 +85,13 @@ h6 {
 .btn-style{
   width: 12rem;
   height: 4rem;
-  border-radius: 2rem;
-  color: #fff;
-  background-color: var(--primary-color);
+  /*border-radius: 2rem;*/
+  outline: 0.4rem solid var(--button-color);
+  color: var(--button-color);
+  font-weight: 0.6rem;
+  background-color: transparent;
   text-transform: capitalize;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .btn-style:first-child {

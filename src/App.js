@@ -1,27 +1,16 @@
 import React from 'react'
-import Slider from './components/slider'
-import Header from './components/header'
-
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link
-} from 'react-router-dom';
+import { Button, Form, FormGroup, Label, Input, FormText, Card, CardBody } from 'reactstrap';
+import { Hero } from './dataFile.js'
+import './App.css'
 
 const App = () => {
 
   return (
-        <Router>
-          <div className="App">
-
-            <Routes>
-                 <Route exact path='/' element={<Header />}></Route>
-                 <Route exact path='/home' element={<Header />}></Route>
-                 <Route exact path='/about' element={< Slider />}></Route>
-            </Routes>
-          </div>
-       </Router>
+      
+        <div className="container h-75 d-flex justify-content-center flex-column align-item-center">
+          <Hero />
+        </div>
+     
        );
 }
 

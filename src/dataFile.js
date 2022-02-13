@@ -3,35 +3,37 @@ import Fotter from './components/footer'
 
 import Slider from './components/slider'
 import Header from './components/header'
+import ProjectHeader from './components/project/header'
+import Hero from './components/project/heroSection'
+// import ValiDationForm from './components/ValidationForm'
 
+import App from './App.js'
 let Data;
 export default Data = {
-  Title: "Kuch To Hoga", 
+  UnderLineTitle: "un",
+  Title: "grammary",
+
   ListOfTabs: [
     {
-      title: "Home",
-      url: "/home",
-      active: window.location.pathname == '/home' ? true : false
+      title: "About us",
+      url: "/aboutus",
+      active: window.location.pathname == '/aboutus' ? true : false
     },
     {
-      title: "About Us",
-      url: "/about",
-      active: window.location.pathname == '/about' ? true : false
+      title: "Solution",
+      url: "/solution",
+      active: window.location.pathname == '/solution' ? true : false
     },
     {
-      title: "Contact Us",
-      url: "/contact",
-      active: window.location.pathname == '/contact' ? true : false
-    },
-    {
-      title: "Notification",
-      url: "/notific",
-      active: window.location.pathname == '/notific' ? true : false
+      title: "Global Network",
+      url: "/global-network",
+      active: window.location.pathname == '/global-network' ? true : false
     }
   ],
   buttonActive: true,
   firstButton: {
-    name: "Sign Up",
+    name: "Contact us",
+    className: 'btn btn-outline btn-style',
     url: "/"
   },
   secondButton: {
@@ -41,4 +43,4 @@ export default Data = {
 }
 
 
-export { NavBar, Fotter, Slider, Header };
+export { NavBar, Fotter, Slider, Header, ProjectHeader, Hero, App };
