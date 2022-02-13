@@ -34,8 +34,8 @@ const footer = props => {
               </li>
             </ul>
 
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-              <a className="text-dark" href="locahost:3000/"> MDBootstrap.com</a>
+            <div class="footer-copyright text-center py-3">© 2022 Copyright:
+              <a className="text-dark" href="locahost:3000/"> ungrammary.com</a>
             </div>
 
           </div>

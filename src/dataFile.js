@@ -16,18 +16,18 @@ export default Data = {
   ListOfTabs: [
     {
       title: "About us",
-      url: "/aboutus",
-      active: window.location.pathname == '/aboutus' ? true : false
+      url: "/",
+      active: window.location.pathname == '/' ? true : false
     },
     {
       title: "Solution",
-      url: "/solution",
-      active: window.location.pathname == '/solution' ? true : false
+      url: "/",
+      active: window.location.pathname == '/' ? true : false
     },
     {
       title: "Global Network",
-      url: "/global-network",
-      active: window.location.pathname == '/global-network' ? true : false
+      url: "/",
+      active: window.location.pathname == '/' ? true : false
     }
   ],
   buttonActive: true,

@@ -24,7 +24,7 @@ ReactDOM.render(<>
         <Route path='/' exct element={<App />} />
         <Route path='/home' exct element={<App />} />
         <Route path='/aboutus' exct element={<App />} />
-        <Route path='/contact' exct element={<></>} />
+        <Route path='/contact' exct element={<App/>} />
       </Routes>
 
 

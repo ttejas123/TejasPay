@@ -1,11 +1,3 @@
 .formSection{
 	border: none;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.imgField{
-	width: 80%;
 }
